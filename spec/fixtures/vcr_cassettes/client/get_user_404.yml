@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.radar.io/v1/users/user_id_404
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - prj_test_sk_27517ebdd9c42b66ba55c2b53b115bed0124b786
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Wed, 01 Sep 2021 05:21:25 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '66'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"31-lVAYv1zz5h9eu8qv6L4MrAdrt8k"
+      X-Powered-By:
+      - Express
+      X-Ratelimit-Limit:
+      - '20'
+      X-Ratelimit-Remaining:
+      - '19'
+      X-Ratelimit-Reset:
+      - '1630473687'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 687c0e14bcf761e2-YVR
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meta":{"code":404,"message":"User not found."}}'
+  recorded_at: Wed, 01 Sep 2021 05:21:25 GMT
+recorded_with: VCR 6.0.0

@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.radar.io/v1/events/612f4061001abc006317503f
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - prj_test_sk_27517ebdd9c42b66ba55c2b53b115bed0124b786
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 01 Sep 2021 09:01:47 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '379'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"2a4-ALkVKFNpavKpqrpJ04ecnjwyUK8"
+      X-Powered-By:
+      - Express
+      X-Ratelimit-Limit:
+      - '20'
+      X-Ratelimit-Remaining:
+      - '19'
+      X-Ratelimit-Reset:
+      - '1630486908'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 687d50ded93561e9-YVR
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meta":{"code":200},"event":{"location":{"coordinates":[-75.97536,31.78382],"type":"Point"},"live":false,"_id":"612f4061001abc006317503f","createdAt":"2021-09-01T08:57:05.906Z","type":"user.stopped_trip","locationAccuracy":80,"confidence":3,"user":{"location":{"type":"Point","coordinates":[-75.97536,31.78382]},"_id":"612f398a0535f300790725c2","updatedAt":"2021-09-01T08:43:45.772Z","userId":"user-uuid-starting-the-trip","deviceId":"device-to-start-a-trip","foreground":false,"description":"Starting
+        a new trip for a user created via tests","locationAccuracy":80},"actualCreatedAt":"2021-09-01T08:57:05.906Z","trip":{"_id":"612f3d41c276cf00802c863f","externalId":"12345"}}}'
+  recorded_at: Wed, 01 Sep 2021 09:01:47 GMT
+recorded_with: VCR 6.0.0

@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.radar.io/v1/track
+    body:
+      encoding: UTF-8
+      string: '{"deviceId":null,"latitude":null,"longitude":null,"accuracy":null}'
+    headers:
+      Authorization:
+      - prj_test_sk_27517ebdd9c42b66ba55c2b53b115bed0124b786
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Wed, 01 Sep 2021 06:47:48 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '81'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"51-/bJmSgaFMCJdYprrhMkX1A7BK7M"
+      X-Powered-By:
+      - Express
+      X-Ratelimit-Limit:
+      - '1500'
+      X-Ratelimit-Remaining:
+      - '1499'
+      X-Ratelimit-Reset:
+      - '1630478870'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 687c8c9dbbfe61e3-YVR
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"code":400,"param":"deviceId","message":"deviceId: Param is
+        required."}}'
+  recorded_at: Wed, 01 Sep 2021 06:47:48 GMT
+recorded_with: VCR 6.0.0

@@ -1,0 +1,65 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.radar.io/v1/events
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - prj_test_sk_27517ebdd9c42b66ba55c2b53b115bed0124b786
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 01 Sep 2021 09:01:03 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '967'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"1103-fb8bb2wAhWm9580esoHZ5bfmJrU"
+      X-Powered-By:
+      - Express
+      X-Ratelimit-Limit:
+      - '20'
+      X-Ratelimit-Remaining:
+      - '19'
+      X-Ratelimit-Reset:
+      - '1630486865'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 687d4fce58ec61ee-YVR
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meta":{"code":200},"events":[{"location":{"coordinates":[-75.97536,31.78382],"type":"Point"},"live":false,"_id":"612f4061001abc006317503f","createdAt":"2021-09-01T08:57:05.906Z","type":"user.stopped_trip","locationAccuracy":80,"confidence":3,"user":{"_id":"612f398a0535f300790725c2","userId":"user-uuid-starting-the-trip","deviceId":"device-to-start-a-trip","description":"Starting
+        a new trip for a user created via tests"},"actualCreatedAt":"2021-09-01T08:57:05.906Z","trip":{"_id":"612f3d41c276cf00802c863f","externalId":"12345"}},{"location":{"coordinates":[-75.97536,31.78382],"type":"Point"},"live":false,"_id":"612f3d41c276cf00802c8646","createdAt":"2021-09-01T08:43:45.772Z","type":"user.started_trip","locationAccuracy":80,"confidence":3,"foreground":false,"user":{"_id":"612f398a0535f300790725c2","userId":"user-uuid-starting-the-trip","deviceId":"device-to-start-a-trip","description":"Starting
+        a new trip for a user created via tests"},"actualCreatedAt":"2021-09-01T08:43:45.772Z","trip":{"_id":"612f3d41c276cf00802c863f","externalId":"12345"}},{"location":{"coordinates":[-96.92740662985656,47.807339740611894],"type":"Point"},"live":false,"_id":"611eb0c8887c7700723490c2","createdAt":"2021-08-19T19:28:08.406Z","type":"user.exited_geofence","locationAccuracy":10,"confidence":3,"foreground":true,"user":{"_id":"611e9185e77e6100799d13d8","userId":"simulated-user-id","deviceId":"simulated-device-id"},"geofence":{"_id":"611e9abfe274d60033a6115e","description":"Northdale
+        Oil-Thompson, ND","tag":"Northdale Oil-Thompson, ND","externalId":"1575"},"duration":3.1825666666666668,"actualCreatedAt":"2021-08-19T19:28:08.406Z"},{"location":{"coordinates":[-97.42407880271912,47.74410676187903],"type":"Point"},"live":false,"_id":"611eb009ff2b72005603042f","createdAt":"2021-08-19T19:24:57.452Z","type":"user.entered_geofence","locationAccuracy":10,"confidence":3,"foreground":true,"user":{"_id":"611e9185e77e6100799d13d8","userId":"simulated-user-id","deviceId":"simulated-device-id"},"geofence":{"_id":"611e9abfe274d60033a6115e","description":"Northdale
+        Oil-Thompson, ND","tag":"Northdale Oil-Thompson, ND","externalId":"1575"},"actualCreatedAt":"2021-08-19T19:24:57.452Z"},{"location":{"coordinates":[-96.68701413550605,47.76118991343795],"type":"Point"},"live":false,"_id":"611ea4deb6a895002cd5e8a4","createdAt":"2021-08-19T18:37:18.967Z","type":"user.exited_geofence","locationAccuracy":10,"confidence":3,"foreground":true,"user":{"_id":"611e9185e77e6100799d13d8","userId":"simulated-user-id","deviceId":"simulated-device-id"},"geofence":{"_id":"611e9d659758fb0087d76d5d","description":"Northdale
+        Oil-Bemidji South","tag":"Northdale Oil-Bemidji South","externalId":"1574"},"duration":0.2728,"actualCreatedAt":"2021-08-19T18:37:18.967Z"},{"location":{"coordinates":[-95.30672937531483,47.530455193389415],"type":"Point"},"live":false,"_id":"611ea4ce1ad5470072d0910a","createdAt":"2021-08-19T18:37:02.599Z","type":"user.entered_geofence","locationAccuracy":10,"confidence":3,"foreground":true,"user":{"_id":"611e9185e77e6100799d13d8","userId":"simulated-user-id","deviceId":"simulated-device-id"},"geofence":{"_id":"611e9d659758fb0087d76d5d","description":"Northdale
+        Oil-Bemidji South","tag":"Northdale Oil-Bemidji South","externalId":"1574"},"actualCreatedAt":"2021-08-19T18:37:02.599Z"},{"location":{"coordinates":[-95.57520776886952,47.52860067331089],"type":"Point"},"live":false,"_id":"611ea4bff9395f0080c9e703","createdAt":"2021-08-19T18:36:47.581Z","type":"user.exited_geofence","locationAccuracy":10,"confidence":3,"foreground":true,"user":{"_id":"611e9185e77e6100799d13d8","userId":"simulated-user-id","deviceId":"simulated-device-id"},"geofence":{"_id":"611e8e5265fbca0041e0193a","description":"Test
+        Geofence","tag":"Test","externalId":"12345"},"duration":81.92556666666667,"actualCreatedAt":"2021-08-19T18:36:47.581Z"},{"location":{"coordinates":[-122.48561885791015,48.943604406488156],"type":"Point"},"live":false,"_id":"611e918c5fcadf0039a63a8c","createdAt":"2021-08-19T17:14:52.047Z","type":"user.entered_geofence","locationAccuracy":10,"confidence":3,"foreground":true,"user":{"_id":"611e9185e77e6100799d13d8","userId":"simulated-user-id","deviceId":"simulated-device-id"},"geofence":{"_id":"611e8e5265fbca0041e0193a","description":"Test
+        Geofence","tag":"Test","externalId":"12345"},"actualCreatedAt":"2021-08-19T17:14:52.047Z"}]}'
+  recorded_at: Wed, 01 Sep 2021 09:01:03 GMT
+recorded_with: VCR 6.0.0

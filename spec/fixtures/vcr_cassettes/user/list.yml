@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.radar.io/v1/users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - prj_test_sk_27517ebdd9c42b66ba55c2b53b115bed0124b786
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 01 Sep 2021 08:05:52 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '841'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"8dd-3lcG+Re9ZIg1i7Y0Eagq5kGrGGo"
+      X-Powered-By:
+      - Express
+      X-Ratelimit-Limit:
+      - '20'
+      X-Ratelimit-Remaining:
+      - '19'
+      X-Ratelimit-Reset:
+      - '1630483554'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 687cfefbc9ea61e2-YVR
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meta":{"code":200,"hasMore":false},"users":[{"_id":"612d41412b9c6200660a8feb","location":{"type":"Point","coordinates":[-73.97536,40.78382]},"live":false,"geofences":[],"createdAt":"2021-08-30T20:36:17.453Z","updatedAt":"2021-09-01T07:36:01.548Z","actualUpdatedAt":"2021-09-01T07:36:01.548Z","userId":"maybe-some-random-uuid","deviceId":"some-random-device-id","foreground":false,"stopped":true,"description":"Test
+        user created from tests","deviceType":"iOS","locationAccuracy":70,"sdkVersion":"","ip":"70.36.60.195"},{"_id":"611e9185e77e6100799d13d8","location":{"type":"Point","coordinates":[-96.93365497476911,47.82606953357273]},"live":false,"geofences":[],"createdAt":"2021-08-19T17:14:45.837Z","updatedAt":"2021-08-19T19:28:57.890Z","actualUpdatedAt":"2021-08-19T19:28:57.890Z","userId":"simulated-user-id","deviceId":"simulated-device-id","installId":"simulated-install-id","foreground":true,"stopped":true,"deviceType":"Web","locationAccuracy":10,"sdkVersion":"3.1.0-beta.7","ip":"70.36.60.195"},{"_id":"611d5b8681163300488639f1","location":{"type":"Point","coordinates":[-122.084,37.4219983]},"live":false,"geofences":[],"createdAt":"2021-08-18T19:12:06.114Z","updatedAt":"2021-08-18T19:14:34.104Z","actualUpdatedAt":"2021-08-18T19:14:34.104Z","deviceId":"83b144f3a85f0afb","installId":"bf7c29ae-b754-4f22-84bf-8a1c1032a7de","foreground":true,"stopped":true,"deviceType":"Android","locationAccuracy":5,"deviceOS":"11","deviceMake":"Google","deviceModel":"sdk_gphone_x86","sdkVersion":"3.1.15","ip":"190.131.217.236","source":"BACKGROUND_LOCATION","locationAuthorization":"GRANTED_FOREGROUND","sessionId":"1629313920"},{"_id":"611b30b1776404006bcd09ac","location":{"type":"Point","coordinates":[-122.084,37.4219983]},"live":false,"geofences":[],"createdAt":"2021-08-17T03:44:49.663Z","updatedAt":"2021-08-17T03:47:18.884Z","actualUpdatedAt":"2021-08-17T03:47:18.884Z","deviceId":"e1439e9b202d7cc4","installId":"6f7e3090-d858-473e-bbb9-2264f8f00d52","foreground":true,"stopped":true,"deviceType":"Android","locationAccuracy":20.079,"deviceOS":"8.1.0","deviceMake":"Google","deviceModel":"Android
+        SDK built for x86","sdkVersion":"3.1.15","ip":"73.63.244.59","source":"BACKGROUND_LOCATION","locationAuthorization":"GRANTED_FOREGROUND","sessionId":"1629171887"}]}'
+  recorded_at: Wed, 01 Sep 2021 08:05:52 GMT
+recorded_with: VCR 6.0.0

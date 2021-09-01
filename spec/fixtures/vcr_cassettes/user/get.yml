@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.radar.io/v1/users/612d41412b9c6200660a8feb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - prj_test_sk_27517ebdd9c42b66ba55c2b53b115bed0124b786
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 01 Sep 2021 08:07:54 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '328'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"1f6-wC0/zw3/ZyYus6ReQD+o/6SowNw"
+      X-Powered-By:
+      - Express
+      X-Ratelimit-Limit:
+      - '20'
+      X-Ratelimit-Remaining:
+      - '19'
+      X-Ratelimit-Reset:
+      - '1630483676'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 687d01f57a62f4ae-YVR
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meta":{"code":200},"user":{"location":{"type":"Point","coordinates":[-73.97536,40.78382]},"live":false,"geofences":[],"_id":"612d41412b9c6200660a8feb","createdAt":"2021-08-30T20:36:17.453Z","updatedAt":"2021-09-01T07:36:01.548Z","actualUpdatedAt":"2021-09-01T07:36:01.548Z","userId":"maybe-some-random-uuid","deviceId":"some-random-device-id","foreground":false,"stopped":true,"description":"Test
+        user created from tests","deviceType":"iOS","locationAccuracy":70,"sdkVersion":"","ip":"70.36.60.195"}}'
+  recorded_at: Wed, 01 Sep 2021 08:07:54 GMT
+recorded_with: VCR 6.0.0
